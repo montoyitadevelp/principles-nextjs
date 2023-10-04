@@ -1,9 +1,11 @@
 "use client";
 import { useState } from "react";
+import { useParams } from 'next/navigation'
 import Link from "next/link";
 
 export default function PostCard({ post }) {
   const [state, setState] = useState(0);
+  const params = useParams()
 
   //RCC - React Client Component
   return (
